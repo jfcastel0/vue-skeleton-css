@@ -1,6 +1,6 @@
 <template>
   <div id="app" style="padding: 5px;">
-    <Button primary>
+    <Button primary  :loading="loading" @click="loading = !loading">
       My Button
     </Button>
     <Button primary disabled>
