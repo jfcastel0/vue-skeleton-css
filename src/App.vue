@@ -20,20 +20,20 @@
         </ol>
     </ul>
 
-    <div class="container">
-      <Row>
-        <Col cols="one">
+    <Container>
+      <Row style="background-color: orange;">
+        <Col cols="three" offset="three">
           <div style="background-color: purple;">Three</div>
         </Col>
         <Col cols="three">
           <div style="background-color: yellow;">Nine</div>
         </Col>
-        <Col cols="six">
+        <!-- <Col cols="six">
           <div style="background-color: yellow;">Nine</div>
         </Col>
-        <Col>
+        <Col cols="two">
           <div style="background-color: yellow;">Nine</div>
-        </Col>
+        </Col> -->
         <!-- <Col>
           <div style="background-color: yellow;">Nine</div>
         </Col>
@@ -47,7 +47,7 @@
           <div style="background-color: yellow;">Nine</div>
         </Col> -->
       </Row>
-    </div>
+    </Container>
   </div>
 </template>
 
@@ -55,13 +55,15 @@
   import Button from './components/Button.vue'
   import Row from './components/Row.vue'
   import Col from './components/Col.vue'
+  import Container from './components/Container.vue'
 
   export default {
     name: 'App',
     components: {
       Button,
       Row,
-      Col
+      Col,
+      Container
     },
     data() {
       return {

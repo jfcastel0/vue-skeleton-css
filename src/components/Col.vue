@@ -1,5 +1,5 @@
 <template>
-    <div :class="`${cols} ${cols === 'one' ? 'column' : 'columns'}`">
+    <div :class="`${cols} columns offset-by-${offset}`">
         <slot></slot>
     </div>
 </template>
@@ -9,7 +9,8 @@
         name: 'Col',
 
         props: {
-            cols: String
+            cols: String,
+            offset: String
         }
     }
 </script>
