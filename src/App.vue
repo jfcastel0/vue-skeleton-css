@@ -12,24 +12,56 @@
     <Button  disabled>
       My Button
     </Button>
-    <Heading size="h1">Heading</Heading>
-    <Heading size="h2">Heading</Heading>
-    <Heading size="h3">Heading</Heading>
-    <Heading size="h4">Heading</Heading>
-    <Heading size="h5">Heading</Heading>
-    <Heading size="h6">Heading</Heading>
+
+    <ul>
+      <li>one</li>
+        <ol>
+          <li>again</li>
+        </ol>
+    </ul>
+
+    <div class="container">
+      <Row>
+        <Col cols="one">
+          <div style="background-color: purple;">Three</div>
+        </Col>
+        <Col cols="three">
+          <div style="background-color: yellow;">Nine</div>
+        </Col>
+        <Col cols="six">
+          <div style="background-color: yellow;">Nine</div>
+        </Col>
+        <Col>
+          <div style="background-color: yellow;">Nine</div>
+        </Col>
+        <!-- <Col>
+          <div style="background-color: yellow;">Nine</div>
+        </Col>
+        <Col>
+          <div style="background-color: yellow;">Nine</div>
+        </Col>
+        <Col>
+          <div style="background-color: yellow;">Nine</div>
+        </Col>
+        <Col>
+          <div style="background-color: yellow;">Nine</div>
+        </Col> -->
+      </Row>
+    </div>
   </div>
 </template>
 
 <script>
   import Button from './components/Button.vue'
-  import Heading from './components/Heading.vue'
+  import Row from './components/Row.vue'
+  import Col from './components/Col.vue'
 
   export default {
     name: 'App',
     components: {
       Button,
-      Heading
+      Row,
+      Col
     },
     data() {
       return {
